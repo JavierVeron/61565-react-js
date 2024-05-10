@@ -1,13 +1,14 @@
 import './App.css'
-import Abstraccion1 from './Clase10/Abstraccion1'
-import Abstraccion2 from './Clase10/Abstraccion2'
-/* import Intercambiabilidad from './Clase10/Intercambiabilidad' */
+import Carrito from './Clase11/Carrito';
+import Productos from './Clase11/Productos';
+import CartContextProvider from './context/CartContext';
 
 function App() {
   return (
-    <>
-      <Abstraccion2 />
-    </>
+    <CartContextProvider>
+      <Productos />
+      <Carrito />
+    </CartContextProvider>
   )
 }
 
